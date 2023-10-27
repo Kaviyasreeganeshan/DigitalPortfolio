@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kaviya's Creation</title>
+    <style>
+       /* Your CSS styles here */
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="C:\Users\PRAMILA\Desktop\Manonmaniam-Sundaranar-University.jpg" alt="College Logo" class="logo">
+        <h1 style="font-size: 36px;">Kaviya Sree G</h1>
+    </header>
+    <div class="container">
+        <h2>Personal Details</h2>
+        <p>Name: Kaviya Sree G</p>
+        <p>Email: kaviyasreeganeshan524@email.com</p>
+        <p>Phone: (91) 7708357158</p>
+
+        <h2>Educational Details</h2>
+        <table id="eduTable">
+            <tr>
+                <th>Education</th>
+                <th>Name of the Institution</th>
+                <th>Graduation Year</th>
+            </tr>
+            <tr>
+                <td>SSLC</td>
+                <td>St. Lawrence Higher Secondary School</td>
+                <td>2018</td>
+            </tr>
+            <tr>
+                <td>HSC</td>
+                <td>St. Lawrence Higher Secondary School</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>B.Sc</td>
+                <td>PKC College</td>
+                <td>2022</td>
+            </tr>
+        </table>
+
+        <h2>Skill Sets</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Time Management</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <button id="toggleEdu">Toggle Educational Details</button>
+    </div>
+
+    <script>
+        // JavaScript logic to toggle the visibility of the educational details
+        const eduTable = document.getElementById("eduTable");
+        const toggleButton = document.getElementById("toggleEdu");
+
+        toggleButton.addEventListener("click", function() {
+            if (eduTable.style.display === "none" || eduTable.style.display === "") {
+                eduTable.style.display = "table";
+            } else {
+                eduTable.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
